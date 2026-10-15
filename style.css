@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #302E2B;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    min-height: 100vh;
+}
+#sahovnica{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("odzadje.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    pointer-events: none;
+}
+#glavni{
+    background-color: #262421;
+    width: 400px;
+    height: 590px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+#registracija{
+    background-color: #201E1C;
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    position: absolute;
+    top: 20px;
+    margin:auto;
+    margin-top: 10px;
+}
+#reg{
+    margin-top: 20px;
+    font-size: 15px;
+}
