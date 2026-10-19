@@ -1,3 +1,3 @@
-#[https://maksimiljan-bizjak.github.io/chess.com-clone/](Github Pages)
-This is my copy of chess.com login page that i had to do for a grade in a web development class in my 4. year of high scool.
-Hope u like it!
+# [GitHub Pages](https://maksimiljan-bizjak.github.io/chess.com-clone/)
+
+This is my copy of the Chess.com login page that I made for a grade in my web development class during my fourth year of high school. I hope you like it!
