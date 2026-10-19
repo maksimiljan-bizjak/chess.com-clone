@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0064e0;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M500,250.924993C500,112.349999,388.075018,0,250,0S0,112.349999,0,250.924993c0,117.674994,80.725002,216.400027,189.599991,243.525004v-166.849995h-51.549995v-76.674986h51.549995v-33.050013c0-85.399997,38.499999-125,122.049999-125,15.849996,0,43.174982,3.125,54.349995,6.25v69.499993c-9.606171-.742626-19.240975-1.051283-28.874993-.924993-41.000009,0-56.824994,15.575004-56.824994,56.099987v27.125001h81.650019l-14.00001,76.67501h-67.650008v172.399998c123.799992-15.00001,219.700003-120.800018,219.700003-249.075007Z"/>
+</svg>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/?utm_source=w3tc&utm_medium=footer_comment&utm_campaign=free_plugin
+
+Object Caching 19/22 objects using APC
+Page Caching using Disk{w3tc_pagecache_reject_reason} 
+Lazy Loading
+Minified using Disk
+Database Caching 1/6 queries in 0.005 seconds using APC
+
+Served from: pixelbag.net @ 2026-10-19 16:07:06 by W3 Total Cache
+-->

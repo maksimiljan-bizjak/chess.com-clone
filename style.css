@@ -1,51 +1,315 @@
-*{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #302E2B;
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-   
     min-height: 100vh;
-}
-#sahovnica{
-    width: 100vw;
-    height: 100vh;
+    color: #f0f0ed;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #302d2a;
     background-image: url("odzadje.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center bottom;
-    position: absolute;
-    pointer-events: none;
 }
-#glavni{
-    background-color: #262421;
-    width: 400px;
-    height: 590px;
-    position: absolute;
-    border-radius: 10px;
-    margin-top: 100px;
-}
-#registracija{
-    background-color: #201E1C;
-    width: 400px;
-    height: 60px;
-    position: absolute;
-    bottom: 0;
-    border-radius: 0 0 10px 10px;
-    color:white;
+
+.page {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    padding: 28px 16px;
 }
-#logo{
+
+.card {
+    width: 100%;
+    max-width: 396px;
+    overflow: hidden;
+    padding: 17px 40px 0;
+    background: #242321;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px #0005;
+}
+
+.demo {
+    margin: 0 -23px 14px;
+    padding: 7px 8px;
+    border-radius: 4px;
+    background: #fff1d6;
+    color: #694907;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+
+.brand {
+    display: block;
+    flex: 0 0 auto;
+    margin: 0 auto 18px;
+    width: 158px;
+    line-height: 0;
+}
+
+.brand img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 0 0 7px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.sub {
+    margin: 0 0 17px;
+    color: #b7b7b1;
+    text-align: center;
+    font-size: 13px;
+}
+
+.sr-only {
     position: absolute;
-    top: 20px;
-    margin:auto;
-    margin-top: 10px;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
-#reg{
-    margin-top: 20px;
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form>input {
+    width: 100%;
+    height: 41px;
+    padding: 0 13px;
+    border: 1px solid #484743;
+    border-radius: 5px;
+    background: #353431;
+    color: #f5f5f2;
+    font-size: 14px;
+}
+
+form>input::placeholder {
+    color: #aaa9a3;
+}
+
+form>input:focus {
+    outline: 2px solid #85ae57;
+    border-color: #85ae57;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 21px;
+    margin: -1px 0 3px;
+    font-size: 12px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #e0e0db;
+}
+
+.remember input {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    accent-color: #81ab52;
+}
+
+.forgot {
+    color: #d7d7d2;
+    text-decoration: underline;
+}
+
+.primary {
+    width: 100%;
+    min-height: 58px;
+    border: 1px solid #77a343;
+    border-radius: 8px;
+    background: linear-gradient(#8ac34d, #68a83b);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: 0 1px 1px #0003;
+}
+
+.primary:hover {
+    background: linear-gradient(#96cc5d, #73b443);
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin: 25px 0;
+    color: #b9b8b2;
+    font-size: 12px;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    height: 1px;
+    background: #3a3936;
+    flex: 1;
+}
+
+.socials {
+    display: grid;
+    gap: 7px;
+}
+
+.social {
+    position: relative;
+    display: flex;
+    min-height: 57px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3c3b38;
+    border-radius: 9px;
+    background: linear-gradient(#383734, #302f2c);
+    color: #f2f2ef;
     font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.social:hover {
+    background: #42413d;
+}
+
+.icon {
+    position: absolute;
+    left: 20%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.apple .icon {
+    color: #f4f4f1;
+}
+
+.google .icon {
+    color: #4285f4;
+}
+
+.facebook .icon {
+    display: grid;
+    width: 22px;
+    height: 22px;
+    place-items: center;
+    border-radius: 50%;
+    background: #1877f2;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    display: block;
+    margin: 25px -40px 0;
+    padding: 18px 14px;
+    background: #1d1c1a;
+    color: #e4e3df;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.fine {
+    margin: 0 -25px;
+    padding: 10px 8px 12px;
+    color: #c7c6c0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.register-card {
+    padding-top: 18px;
+}
+
+.register-card form {
+    gap: 9px;
+}
+
+.register-card .primary {
+    min-height: 52px;
+    font-size: 17px;
+}
+
+.register-card .or {
+    margin: 19px 0;
+}
+
+.register-card .social {
+    min-height: 49px;
+}
+
+.register-card .footer {
+    margin-top: 19px;
+}
+
+.recovery-card .primary {
+    margin-top: 4px;
+    font-size: 17px;
+}
+
+.recovery-card .fine {
+    margin-top: 8px;
+}
+
+.recovery-card .footer {
+    margin-top: 7px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 396px;
+        padding-right: 26px;
+        padding-left: 26px;
+    }
+
+    .footer {
+        margin-right: -26px;
+        margin-left: -26px;
+    }
+}
+
+.provider-icon {
+    position: absolute;
+    left: 20%;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.social {
+    gap: 10px;
+}
+
+.provider-icon {
+    position: static;
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    object-fit: contain;
 }
